@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
     <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
     <script type="text/javascript" src="js/preloadjs-0.6.2.min.js"></script>
@@ -17,6 +17,28 @@
     <div class="bor bb"></div>
     <div class="bor lb"></div>
     <div class="bor rb"></div>
+    <nav>
+        <div class="inner">
+            <div class="logo"><a href="#"><img src="images/logo.png" alt="正奇英语" /></a></div>
+            <div class="menu">
+                <div class="index"><a href="#">首页</a> </div>
+                <div class="navmenu" id="navmenu">
+                    <img src="images/ico_menu.png" />
+                    <div class="closebt" id="closebt"><img src="images/ico_cross.png" /></div>
+                    <div class="whitemask"></div>
+                    <div class="menubox">
+                        <ul>
+                            <li><a href="#">正奇课程</a></li>
+                            <li><a href="#">精彩活动</a></li>
+                            <li><a href="#">师资保障</a></li>
+                            <li><a href="#">教学成果</a></li>
+                            <li><a href="#">关于正奇</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="main">
         <p>1</p>
         <p>2</p>
@@ -39,6 +61,17 @@
         <p>19</p>
         <p>20</p>
     </div>
-    
+    <script>
+        $("#navmenu").hover(function() {
+            $(".closebt").show();
+            $(".menubox").show();
+        }, function() {
+            /* Stuff to do when the mouse leaves the element */
+        });
+        $("#closebt").click(function(event) {
+            $(".closebt").hide();
+            $(".menubox").hide();
+        });
+    </script>
 </body>
 </html>
