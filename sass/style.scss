@@ -5,7 +5,6 @@ html{
 }
 body{
     font-family: Arial,"Microsoft Yahei",;
-    background: #eeecf4;
     font-size: 1rem;
 }
 input{
@@ -23,12 +22,7 @@ img{
 .ofh{
     overflow: hidden;
 }
-.main{
-    max-width:1920px;
-    min-width:1000px;
-    margin:0 auto;
-    background: #eeecf4;
-}
+
 .bor{
     position: fixed;
     z-index:999;
@@ -89,13 +83,13 @@ nav{
             float: left;
         }
         .menu{
-            width: 96px;
+            width: 196px;
             height: 48px;
             //margin-right: 6.4rem;
             margin-top: 12px;
             float: right;
             .index{
-                width: 44px;
+                width: 144px;
                 height: 44px;
                 font-size: 16px;
                 line-height: 2;
@@ -103,6 +97,7 @@ nav{
                 text-align: right;
                 padding-right: 4px;
                 padding-top: 4px;
+                color: #fff;
                 a{
                     color: #fff;
                     &:hover,&:active{
@@ -369,16 +364,16 @@ nav{
                     font-size: 16px;
                     color: #000;
                 }
-                ::-webkit-input-placeholder { 
+                ::-webkit-input-placeholder {
                     color: #9a8ebf;
                 }
-                :-moz-placeholder { 
+                :-moz-placeholder {
                     color: #9a8ebf;
                 }
-                ::-moz-placeholder { 
-                    color: #9a8ebf; 
+                ::-moz-placeholder {
+                    color: #9a8ebf;
                 } /* for the future */
-                :-ms-input-placeholder { 
+                :-ms-input-placeholder {
                     color: #9a8ebf;
                 }
             }
@@ -446,4 +441,100 @@ nav{
             margin-right: 20px;
         }
     }
+}
+.main{
+    width: 1000px;
+    margin:60px auto 0 auto;
+    //background: #eeecf4;
+    .banner_tech{
+        width: 100%;
+        height: 490px;
+        font-size: 0;
+    }
+    .teach_title{
+        width: 100%;
+        height: 150px;
+        text-align: center;
+        font-size: 0;
+    }
+    .line_teach_who{
+        height: 350px;
+        width: 100%;
+        position: relative;
+        padding-right: 330px;
+        padding-left: 64px;
+        @include box-sizing(border-box);
+        .inner_img{
+            position: absolute;
+            right:0;
+            top:0;
+            font-size: 0;
+            width: 400px;
+            height: 270px;
+        }
+        .tw_title{
+            width: 100%;
+            height: 50px;
+            font-size: 0;
+            padding-top: 50px;
+        }
+        h2{
+            height: 60px;
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 24px;
+            //font-weight: bold;
+            color: #000;
+            line-height: 2.5;
+            margin-top: 40px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 2;
+            color: #060001;
+            opacity: 0.7;
+        }
+    }
+    .teach_imgbox{
+        width: 100%;
+        font-size: 0;
+        img{
+            width: 100%;
+        }
+    }
+    .teach_tsys_text{
+        width: 100%;
+        height: 330px;
+        p{
+            font-size: 24px;
+            line-height: 2.5;
+            text-align: center;
+        }
+    }
+}
+.teach_bg{
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    top:0;
+    left:0;
+    right: 0;
+    min-width:1000px;
+    @include transform(rotate(3.5687deg));
+    background: #574395;
+    z-index:-1;
+}
+.teach_bg_top{
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    top:-400px;
+    left:0;
+    right: 0;
+    min-width:1000px;
+    @include transform(rotate(3.5687deg));
+    background: #574395;
+    z-index:-1;
 }
