@@ -4,7 +4,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: Arial,"Microsoft Yahei",;
+    font-family: Arial,"Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
     font-size: 1rem;
 }
 input{
@@ -445,6 +445,7 @@ nav{
 .main{
     width: 1000px;
     margin:60px auto 0 auto;
+    padding-bottom: 30px;
     //background: #eeecf4;
     .banner_tech{
         width: 100%;
@@ -511,6 +512,39 @@ nav{
             font-size: 24px;
             line-height: 2.5;
             text-align: center;
+        }
+    }
+    .line_teach_csys{
+        width: 800px;
+        height: 150px;
+        margin: 0 auto 80px auto;
+        @include box-sizing(border-box);
+        padding: 25px 250px 0 60px;
+        position: relative;
+        background: #f1eefb;
+        .teach_csys_index{
+            position: absolute;
+            width: 80px;
+            top:-60px;
+            right:0;
+            color: #574395;
+            font-size: 120px;
+            opacity: 0.3;
+        }
+        h2{
+            font-size: 24px;
+            line-height: 2;
+            color: #000;
+            width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.8;
+            color: #060001;
+            opacity: 0.6;
         }
     }
 }
