@@ -625,6 +625,8 @@ nav .inner .menu .navmenu .whitemask {
   padding-bottom: 30px;
   /* teach */
   /* about */
+  /* activity */
+  /* lesson */
 }
 /* line 453, ../sass/style.scss */
 .main .banner_tech {
@@ -919,8 +921,291 @@ nav .inner .menu .navmenu .whitemask {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 /* line 700, ../sass/style.scss */
+.main .act_banner {
+  width: 100%;
+  height: 400px;
+  font-size: 0;
+  overflow: hidden;
+  padding-top: 30px;
+  cursor: pointer;
+}
+/* line 708, ../sass/style.scss */
+.main .act_list {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 711, ../sass/style.scss */
+.main .act_list .activity {
+  width: 470px;
+  height: 320px;
+  margin-right: 60px;
+  float: left;
+}
+/* line 716, ../sass/style.scss */
+.main .act_list .activity:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 719, ../sass/style.scss */
+.main .act_list .activity .act_img {
+  width: 100%;
+  height: 188px;
+  font-size: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* line 726, ../sass/style.scss */
+.main .act_list .activity .act_content {
+  width: 100%;
+  height: 96px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+/* line 731, ../sass/style.scss */
+.main .act_list .activity .act_content h3 {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  line-height: 2;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+/* line 742, ../sass/style.scss */
+.main .act_list .activity .act_content p {
+  width: 100%;
+  height: 64px;
+  font-size: 16px;
+  line-height: 2;
+  color: #5d5d5d;
+  overflow: hidden;
+}
+/* line 754, ../sass/style.scss */
+.main .tabs {
+  width: 100%;
+  padding-top: 20px;
+  height: 164px;
+  text-align: center;
+}
+/* line 759, ../sass/style.scss */
+.main .tabs .tab {
+  margin-right: 30px;
+  width: 164px;
+  height: 164px;
+  cursor: pointer;
+  font-size: 0;
+}
+/* line 766, ../sass/style.scss */
+.main .tabs .tab:nth-child(4n+3), .main .tabs .tab:nth-child(4n) {
+  margin-right: 0;
+}
+/* line 771, ../sass/style.scss */
+.main .lage {
+  display: inline-block;
+}
+/* line 774, ../sass/style.scss */
+.main .hage {
+  display: none;
+}
+/* line 777, ../sass/style.scss */
+.main .lage_c {
+  display: block;
+}
+/* line 780, ../sass/style.scss */
+.main .hage_c {
+  display: none;
+}
+/* line 783, ../sass/style.scss */
+.main .course {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 786, ../sass/style.scss */
+.main .course .cour_header {
+  width: 100%;
+  height: 630px;
+  position: relative;
+}
+/* line 791, ../sass/style.scss */
+.main .course .cour_header .title_box {
+  width: 420px;
+  font-size: 0;
+}
+/* line 795, ../sass/style.scss */
+.main .course .cour_header .sub_box {
+  height: 630px;
+  position: absolute;
+  left: 370px;
+  top: 0;
+  font-size: 0;
+}
+/* line 803, ../sass/style.scss */
+.main .course .cour_sub {
+  width: 100%;
+  height: 740px;
+  margin-top: 70px;
+  position: relative;
+  z-index: -1;
+}
+/* line 809, ../sass/style.scss */
+.main .course .cour_sub .title_box {
+  width: 318px;
+  font-size: 0;
+}
+/* line 813, ../sass/style.scss */
+.main .course .cour_sub .sub_box {
+  position: absolute;
+  left: 345px;
+  top: -69px;
+  font-size: 0;
+}
+/* line 821, ../sass/style.scss */
+.main .course .cour_s {
+  position: relative;
+  width: 100%;
+}
+/* line 824, ../sass/style.scss */
+.main .course .cour_s .sider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0;
+}
+/* line 830, ../sass/style.scss */
+.main .course .cour_s .line_cour {
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-bottom: 24px;
+  padding-right: 320px;
+}
+/* line 836, ../sass/style.scss */
+.main .course .cour_s .line_cour:nth-child(5n) {
+  padding-right: 30px;
+}
+/* line 839, ../sass/style.scss */
+.main .course .cour_s .line_cour .title_box {
+  width: 100%;
+  font-size: 0;
+  height: 84px;
+}
+/* line 844, ../sass/style.scss */
+.main .course .cour_s .line_cour .countent_box {
+  font-size: 24px;
+  width: 100%;
+  line-height: 2;
+}
+/* line 851, ../sass/style.scss */
+.main .course .cour_info {
+  width: 100%;
+}
+/* line 853, ../sass/style.scss */
+.main .course .cour_info p {
+  text-align: center;
+  font-size: 20px;
+  color: #010101;
+  line-height: 3;
+  font-family: SimSun,STSong;
+}
+/* line 861, ../sass/style.scss */
+.main .course .cour_i_pic {
+  width: 100%;
+  height: 550px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 866, ../sass/style.scss */
+.main .course .cour_i_pic .i_pic {
+  width: 310px;
+  height: 550px;
+  margin-right: 35px;
+  float: left;
+  font-size: 0;
+}
+/* line 872, ../sass/style.scss */
+.main .course .cour_i_pic .i_pic:last-child {
+  margin-right: 0;
+}
+/* line 877, ../sass/style.scss */
+.main .course .cour_b {
+  width: 100%;
+  font-size: 0;
+  padding-bottom: 30px;
+}
+/* line 882, ../sass/style.scss */
+.main .course .cour_info2 {
+  width: 100%;
+  padding-bottom: 50px;
+}
+/* line 885, ../sass/style.scss */
+.main .course .cour_info2 p {
+  text-align: center;
+  font-size: 20px;
+  color: #010101;
+  line-height: 3;
+}
+
+/* line 896, ../sass/style.scss */
+.ac_detail {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #574395;
+  opacity: 0.7;
+  z-index: 1300;
+  display: none;
+}
+
+/* line 907, ../sass/style.scss */
+.detail_container {
+  position: fixed;
+  width: 860px;
+  top: 70px;
+  bottom: 70px;
+  left: 50%;
+  margin-left: -430px;
+  background: #fff;
+  z-index: 1350;
+  display: none;
+}
+/* line 917, ../sass/style.scss */
+.detail_container .close {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  font-size: 0;
+  cursor: pointer;
+  right: -20px;
+  top: -20px;
+}
+/* line 925, ../sass/style.scss */
+.detail_container .close img {
+  width: 100%;
+}
+/* line 929, ../sass/style.scss */
+.detail_container .content {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* line 934, ../sass/style.scss */
+.detail_container .content article {
+  padding: 10px;
+  width: 100%;
+}
+/* line 937, ../sass/style.scss */
+.detail_container .content article img {
+  max-width: 100%;
+}
+
+/* line 943, ../sass/style.scss */
 .teach_bg {
   position: absolute;
   width: 100%;
@@ -937,7 +1222,7 @@ nav .inner .menu .navmenu .whitemask {
   z-index: -1;
 }
 
-/* line 712, ../sass/style.scss */
+/* line 955, ../sass/style.scss */
 .teach_bg_top {
   position: absolute;
   width: 100%;

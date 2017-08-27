@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title>正奇英语</title>
+</head>
+<body style="overflow-x:hidden">
+    <div class="bor tb"></div>
+    <div class="bor bb"></div>
+    <div class="bor lb"></div>
+    <div class="bor rb"></div>
+    <nav>
+        <div class="inner">
+            <div class="logo"><a href="/"><img src="images/logo.png" alt="正奇英语" /></a></div>
+            <div class="menu">
+                <div class="index">精彩活动 </div>
+                <div class="navmenu" id="navmenu">
+                    <img src="images/ico_menu.png" />
+                    <div class="closebt" id="closebt"><img src="images/ico_cross.png" /></div>
+                    <div class="whitemask"></div>
+                    <div class="menubox">
+                        <ul>
+                            <li><a href="course.html">正奇课程</a></li>
+                            <li><a href="activity.html">精彩活动</a></li>
+                            <li><a href="teacher.html">师资保障</a></li>
+                            <li><a href="achievement.html">教学成果</a></li>
+                            <li><a href="about.html">关于正奇</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="act_banner" onclick="ClickAc();"><img src="images/page_img/ac_banner.jpg" /></div>
+        <div class="page_title"><img src="images/title_ac_1.png" /></div>
+        <section class="act_list">
+            <div class="activity">
+                <div class="act_img" onclick="ClickAc();"><img src="images/page_img/ac_1.jpg" /></div>
+                <div class="act_content">
+                    <h3 onclick="ClickAc();">英语夏令营</h3>
+                    <p>疯狂英语，惊艳一夏。4-20岁青少年成长设计</p>
+                </div>
+            </div>   
+            <div class="activity">
+                <div class="act_img" onclick="ClickAc();"><img src="images/page_img/ac_2.jpg" /></div>
+                <div class="act_content">
+                    <h3 onclick="ClickAc();">DIY特色主题课</h3>
+                    <p>舌尖上的正奇、指尖上的正奇、节日上的正奇</p>
+                </div>
+            </div>    
+            <div class="activity">
+                <div class="act_img" onclick="ClickAc();"><img src="images/page_img/ac_3.jpg" /></div>
+                <div class="act_content">
+                    <h3 onclick="ClickAc();">正奇读书俱乐部</h3>
+                    <p>纸质阅读，大量分级阅读。21天养成阅读习惯。</p>
+                </div>
+            </div>
+            <div class="activity">
+                <div class="act_img" onclick="ClickAc();"><img src="images/page_img/ac_4.jpg" /></div>
+                <div class="act_content">
+                    <h3 onclick="ClickAc();">英文表演班召集令</h3>
+                    <p>SHOW出孩子喜欢的角色</p>
+                </div>
+            </div>
+            <div class="activity">
+                <div class="act_img" onclick="ClickAc();"><img src="images/page_img/ac_5.jpg" /></div>
+                <div class="act_content">
+                    <h3 onclick="ClickAc();">自然拼读法</h3>
+                    <p>和美国孩子同步学习的英文教学法</p>
+                </div>
+            </div>
+            <div class="activity">
+                <div class="act_img" onclick="ClickAc();"><img src="images/page_img/ac_6.jpg" /></div>
+                <div class="act_content">
+                    <h3 onclick="ClickAc();">校庆大派对</h3>
+                    <p>三大主题，寓教于乐，人人有礼</p>
+                </div>
+            </div>     
+        </section>
+    </div>
+    <div class="ac_detail"></div>
+    <div class="detail_container">
+        <div class="close" id="closeac"><img src="images/ico_cross_2.png" alt="" /></div>
+        <div class="content">
+            <article>
+                <img src="images/page_img/ac.jpg" alt="" />
+            </article>
+        </div>
+    </div>
+    <script>
+        $("#navmenu").hover(function() {
+            $(".closebt").show();
+            $(".whitemask").show();
+            $(".menubox").show();
+        }, function() {
+            /* Stuff to do when the mouse leaves the element */
+        });
+        $("#closebt").click(function(event) {
+            $(".closebt").hide();
+            $(".whitemask").hide();
+            $(".menubox").hide();
+        });
+        $(document).on('click', '#closeac', function(event) {
+            $(".ac_detail").hide();
+            $(".detail_container").hide();
+        });
+        function ClickAc(acid){
+            $(".ac_detail").show();
+            $(".detail_container").show();
+        }
+    </script>
+</body>
+</html>

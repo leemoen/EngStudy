@@ -696,6 +696,249 @@ nav{
             text-overflow: ellipsis;
         }
     }
+    /* activity */
+    .act_banner{
+        width: 100%;
+        height: 400px;
+        font-size: 0;
+        overflow: hidden;
+        padding-top: 30px;
+        cursor: pointer;
+    }
+    .act_list{
+        width: 100%;
+        overflow: hidden;
+        .activity{
+            width: 470px;
+            height: 320px;
+            margin-right: 60px;
+            float: left;
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+            .act_img{
+                width: 100%;
+                height: 188px;
+                font-size: 0;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .act_content{
+                width: 100%;
+                height: 96px;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                h3{
+                    width: 100%;
+                    height: 40px;
+                    font-size: 20px;
+                    line-height: 2;
+                    color: #000;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    cursor: pointer;
+                }
+                p{
+                    width: 100%;
+                    height: 64px;
+                    font-size: 16px;
+                    line-height: 2;
+                    color: #5d5d5d;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    /* lesson */
+    .tabs{
+        width: 100%;
+        padding-top: 20px;
+        height: 164px;
+        text-align: center;
+        .tab{
+            //display:inline-block;
+            margin-right: 30px;
+            width: 164px;
+            height: 164px;
+            cursor: pointer;
+            font-size: 0;
+            &:nth-child(4n+3),&:nth-child(4n){
+                margin-right: 0;
+            }
+        }
+    }
+    .lage{
+        display:inline-block;
+    }
+    .hage{
+        display:none;
+    }
+    .lage_c{
+        display:block;
+    }
+    .hage_c{
+        display:none;
+    }
+    .course{
+        width: 100%;
+        margin-top: 20px;
+        .cour_header{
+            width: 100%;
+            height: 630px;
+            
+            position: relative;
+            .title_box{
+                width: 420px;
+                font-size: 0;
+            }
+            .sub_box{
+                height: 630px;
+                position: absolute;
+                left:370px;
+                top:0;
+                font-size: 0;
+            }
+        }
+        .cour_sub{
+            width: 100%;
+            height: 740px;
+            margin-top: 70px;
+            position: relative;
+            z-index:-1;
+            .title_box{
+                width: 318px;
+                font-size: 0;
+            }
+            .sub_box{
+                //height: 630px;
+                position: absolute;
+                left:345px;
+                top:-69px;
+                font-size: 0;
+            }
+        }
+        .cour_s{
+            position: relative;
+            width: 100%;
+            .sider{
+                position: absolute;
+                top:0;
+                right:0;
+                font-size: 0;
+            }
+            .line_cour{
+                width: 100%;
+                @include box-sizing(border-box);
+                padding-left: 50px;
+                padding-bottom: 24px;
+                padding-right: 320px;
+                &:nth-child(5n){
+                    padding-right: 30px;
+                }
+                .title_box{
+                    width: 100%;
+                    font-size: 0;
+                    height: 84px;
+                }
+                .countent_box{
+                    font-size: 24px;
+                    width: 100%;
+                    line-height: 2;
+                }
+            }
+        }
+        .cour_info{
+            width: 100%;
+            p{
+                text-align: center;
+                font-size: 20px;
+                color: #010101;
+                line-height: 3;
+                font-family: SimSun,STSong;
+            }
+        }
+        .cour_i_pic{
+            width: 100%;
+            height: 550px;
+            margin-top: 50px;
+            padding-bottom: 50px;
+            .i_pic{
+                width: 310px;   
+                height: 550px;
+                margin-right: 35px;
+                float: left;
+                font-size: 0;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        .cour_b{
+            width: 100%;
+            font-size: 0;
+            padding-bottom: 30px;
+        }
+        .cour_info2{
+            width: 100%;
+            padding-bottom: 50px;
+            p{
+                text-align: center;
+                font-size: 20px;
+                color: #010101;
+                line-height: 3;
+
+            }
+        }
+    }
+    
+}
+.ac_detail{
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background: #574395;
+    opacity: 0.7;
+    z-index:1300;  
+    display: none; 
+}
+.detail_container{
+    position: fixed;
+    width: 860px;
+    top:70px;
+    bottom:70px;
+    left:50%;
+    margin-left: -430px;
+    background: #fff;
+    z-index:1350;
+    display: none; 
+    .close{
+        position: absolute;
+        width: 58px;
+        height: 58px;
+        font-size: 0;
+        cursor: pointer;
+        right: -20px;
+        top:-20px;
+        img{
+            width: 100%;
+        }
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        article{
+            padding:10px;
+            width: 100%;
+            img{
+                max-width:100%;
+            }
+        }
+    }
 }
 .teach_bg{
     position: absolute;
