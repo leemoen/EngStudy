@@ -1,5 +1,6 @@
 @import "compass/reset";
 @import "compass/css3";
+/* commen */
 body{
     font-family: Arial,"Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
 }
@@ -14,6 +15,7 @@ a{
 }
 img{
     border: none;
+    max-width:100%;
 }
 
 .bor{
@@ -51,4 +53,280 @@ img{
     bottom: 0;
     height: 9999rem;
     width: 0.15rem;
+}
+.bottom{
+    width: 100%;
+    height: 0.6rem;
+}
+nav{
+    width: 100%;
+    height: 0.9rem;
+    font-size: 0;
+    background: #574395;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1200;
+    .inner{
+        width: 100%;
+        height: 0.9rem;
+        position: relative;
+        .logo{
+            //width: 3rem;
+            height: 0.9rem;
+            font-size: 0;
+            float: left;
+            img{
+                height: 0.9rem;
+            }
+        }
+        .menu{
+            position: absolute;
+            right: 0.35rem;
+            top: 50%;
+            margin-top: -0.16rem;
+            width: 0.32rem;
+            img{
+                width: 100%;
+            }
+        }
+        .index{
+            position: absolute;
+            right: 0.87rem;
+            top: 50%;
+            margin-top: -0.18rem;
+            height: 0.36rem;
+            font-size: 0.24rem;
+            line-height: 1.5;
+            color: #fff;
+        }
+    }
+}
+section{
+    width: 100%;
+}
+/* index */
+.banner li{
+    width: 100%;
+    position: relative;
+    font-size: 0; 
+    img{
+        width: 100%;
+    }
+    .img_title{
+        position: absolute;
+        width: 6.15rem;
+        height: 3.4rem;
+        left: 50%;
+        margin-left: -3.075rem;
+        top: 6.05rem;
+    }
+}
+.nav{
+    width: 100%;
+    height: 1.6rem;
+    margin-top: 0.4rem;
+    text-align: center;
+    font-size: 0;
+    li{
+        display:inline-block;
+        width: 1.4rem;
+        height: 1.6rem;
+        font-size: 0;
+        //margin: 0 0.1rem;
+        @include border-radius(0.1rem);
+        overflow: hidden;
+        &:hover,&:active{
+            background: #dfdbea;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+.index_main{
+    @include box-sizing(border-box);
+    padding: 0 0.6rem;
+}
+.line_title{
+    width: 100%;
+    height: 1.5rem;
+    font-size: 0;
+    text-align: center;
+    img{
+        width: 4rem;
+        height: 1.5rem;
+    }
+}
+.line_content{
+    width: 100%;
+    height: 4.3rem;
+    margin-bottom: 0.4rem;
+    background: #fff;
+    padding: 0 0.1rem;
+    @include box-sizing(border-box);
+    .imgbox{
+        width: 100%;
+        height: 2.4rem;
+        font-size: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .textbox{
+        width: 100%;
+        .title{
+            //margin-top: 0.24rem;
+            text-align: center;
+            font-size: 0;
+            img{
+                width: 2.56rem;
+            }
+        }
+        .content{
+            width: 100%;
+            p{
+                font-family: SimSun,STSong;
+                font-size: 0.16rem;
+                line-height: 0.5rem;
+                text-align: center;
+            }
+        }
+    }
+}
+.line_content_ob{
+    width: 100%;
+    height: 2.8rem;
+    margin-bottom: 0.4rem;
+    background: #fff;
+    .imgbox{
+        width: 3.1rem;
+        height: 2.8rem;
+        float: left;
+        font-size: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .textbox{
+        width: 2.1rem;
+        height: 2.8rem;
+        float: left;
+        .title{
+            width: 100%;
+            text-align: center;
+            padding-top: 0.6rem;
+            font-size: 0;
+            img{
+                width: 0.9rem;
+                margin-left: -0.1rem;
+            }
+        }
+        .content{
+            width: 100%;
+            margin-top: 0.2rem;
+            //padding-left: 0.15rem;
+            @include box-sizing(border-box);
+            p{
+                font-family: SimSun,STSong;
+                font-size: 0.16rem;
+                line-height: 0.4rem;
+                text-align: center;
+            }
+        }
+    }
+}
+.line_content_contact{
+    width: 5.5rem;
+    margin: 0 auto;
+    font-size: 0;
+    form{
+        padding:0;
+        margin:0;
+    }
+    .inputbox{
+        width: 100%;
+        height: 0.5rem;
+        input[type=text]{
+            width: 100%;
+            height: 100%;
+            @include box-sizing(border-box);
+            @include border-radius(0.5rem);
+            text-align: center;
+            background: #fff;
+            border: 2px solid #5b4e9b;
+            font-size: 0.16rem;
+            color: #000;
+        }
+        ::-webkit-input-placeholder {
+            color: #9a8ebf;
+        }
+        :-moz-placeholder {
+            color: #9a8ebf;
+        }
+        ::-moz-placeholder {
+            color: #9a8ebf;
+        } /* for the future */
+        :-ms-input-placeholder {
+            color: #9a8ebf;
+        }
+    }
+    .btbox{
+        text-align: center;
+        width: 100%;
+        margin-top: 0.5rem;
+        input[type=submit]{
+            width: 100%;
+            height: 0.5rem;
+            text-align: center;
+            @include border-radius(0.06rem);
+            background: #5b4e9b;
+            font-size: 0.16rem;
+            color: #fff;
+            border:none;
+            -webkit-appearance: none;
+        }
+    }
+}
+.flt_nav{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: 1300;
+    background: #574395;
+    opacity: 0.9;
+    display: none;
+    .close{
+        width: 0.3rem;
+        height: 0.3rem;
+        position: absolute;
+        top: 0.7rem;
+        right: 0.85rem;
+        font-size: 0;
+        cursor: pointer;
+        img{
+            width: 100%;
+        }
+    }
+    ul{
+        position: absolute;
+        top:2.7rem;
+        left:0;
+        width: 100%;
+        li{
+            width: 100%;
+            height: 1.1rem;
+            line-height: 1.1rem;
+            font-size: 0.3rem;
+            text-align: center;
+            a{
+                color: #fff;
+            }
+        }
+    }
 }
