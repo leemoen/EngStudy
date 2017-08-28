@@ -235,8 +235,10 @@ nav{
         width: 100%;
         height: 160px;
         margin-top: 40px;
+        text-align: center;
+        font-size: 0;
         li{
-            float: left;
+            display:inline-block;
             width: 140px;
             height: 160px;
             font-size: 0;
@@ -786,7 +788,7 @@ nav{
         .cour_header{
             width: 100%;
             height: 630px;
-            
+
             position: relative;
             .title_box{
                 width: 420px;
@@ -864,7 +866,7 @@ nav{
             margin-top: 50px;
             padding-bottom: 50px;
             .i_pic{
-                width: 310px;   
+                width: 310px;
                 height: 550px;
                 margin-right: 35px;
                 float: left;
@@ -891,7 +893,7 @@ nav{
             }
         }
     }
-    
+
 }
 .ac_detail{
     position: fixed;
@@ -901,8 +903,8 @@ nav{
     left:0;
     background: #574395;
     opacity: 0.7;
-    z-index:1300;  
-    display: none; 
+    z-index:1300;
+    display: none;
 }
 .detail_container{
     position: fixed;
@@ -913,7 +915,7 @@ nav{
     margin-left: -430px;
     background: #fff;
     z-index:1350;
-    display: none; 
+    display: none;
     .close{
         position: absolute;
         width: 58px;
