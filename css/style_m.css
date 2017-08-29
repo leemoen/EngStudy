@@ -482,3 +482,334 @@ section {
 .flt_nav ul li a {
   color: #fff;
 }
+
+/* about */
+/* line 334, ../sass/style_m.scss */
+.about_banner {
+  width: 100%;
+  height: 5.2rem;
+  font-size: 0;
+}
+/* line 338, ../sass/style_m.scss */
+.about_banner img {
+  width: 100%;
+}
+
+/* line 342, ../sass/style_m.scss */
+.about {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0.33rem;
+}
+/* line 345, ../sass/style_m.scss */
+.about .about_text {
+  width: 100%;
+}
+/* line 347, ../sass/style_m.scss */
+.about .about_text p {
+  font-size: 0.2rem;
+  line-height: 3;
+  font-family: SimSun,STSong;
+  text-align: left;
+  letter-spacing: 0.03rem;
+}
+/* line 355, ../sass/style_m.scss */
+.about .about_honor {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0.2rem;
+}
+/* line 359, ../sass/style_m.scss */
+.about .about_honor .single_honor {
+  width: 2.75rem;
+  margin-right: 0.24rem;
+  height: 1.61rem;
+  margin-bottom: 0.27rem;
+  font-size: 0;
+  float: left;
+}
+/* line 366, ../sass/style_m.scss */
+.about .about_honor .single_honor:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 371, ../sass/style_m.scss */
+.about .about_coop {
+  width: 100%;
+  height: 4rem;
+  font-size: 0;
+}
+/* line 375, ../sass/style_m.scss */
+.about .about_coop img {
+  width: 100%;
+}
+/* line 379, ../sass/style_m.scss */
+.about .about_mission {
+  width: 100%;
+}
+/* line 381, ../sass/style_m.scss */
+.about .about_mission .single_mission {
+  width: 4.5rem;
+  height: 2.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.4rem;
+  font-size: 0;
+}
+/* line 390, ../sass/style_m.scss */
+.about .about_culture {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 393, ../sass/style_m.scss */
+.about .about_culture .single_cul {
+  float: left;
+  width: 50%;
+  height: 2.1rem;
+  border-right: 1px solid #d9d9d9;
+  margin-bottom: 0.42rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 400, ../sass/style_m.scss */
+.about .about_culture .single_cul:nth-child(2n) {
+  border-right: none;
+}
+/* line 403, ../sass/style_m.scss */
+.about .about_culture .single_cul .cul_title {
+  text-align: center;
+  font-size: 0;
+  height: 0.62rem;
+  width: 100%;
+}
+/* line 408, ../sass/style_m.scss */
+.about .about_culture .single_cul .cul_title img {
+  width: 1.4rem;
+}
+/* line 412, ../sass/style_m.scss */
+.about .about_culture .single_cul .cul_content {
+  width: 100%;
+  height: 1.48rem;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 0.33rem;
+}
+/* line 418, ../sass/style_m.scss */
+.about .about_culture .single_cul .cul_content p {
+  font-size: 0.16rem;
+  color: #000;
+  text-align: center;
+  line-height: 2;
+}
+/* line 425, ../sass/style_m.scss */
+.about .about_culture .single_cul .cul_content .cul_index {
+  width: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1rem;
+  font-size: 1.2rem;
+  color: #000;
+  opacity: 0.15;
+  z-index: -1;
+}
+/* line 440, ../sass/style_m.scss */
+.about .about_contact {
+  width: 100%;
+}
+/* line 442, ../sass/style_m.scss */
+.about .about_contact .mark {
+  width: 2.91rem;
+  height: 2.91rem;
+  margin: 0 auto;
+  font-size: 0;
+}
+/* line 447, ../sass/style_m.scss */
+.about .about_contact .mark img {
+  width: 100%;
+}
+/* line 451, ../sass/style_m.scss */
+.about .about_contact .about_con1 {
+  width: 100%;
+  height: 0.9rem;
+  margin-top: 0.4rem;
+}
+/* line 456, ../sass/style_m.scss */
+.about .about_contact .about_con2 {
+  width: 100%;
+  height: 1rem;
+}
+/* line 460, ../sass/style_m.scss */
+.about .about_contact .about_con3 {
+  width: 100%;
+  height: 1rem;
+}
+/* line 464, ../sass/style_m.scss */
+.about .about_contact h2 {
+  font-size: 0.18rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  padding-left: 0.77rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 475, ../sass/style_m.scss */
+.about .about_contact p {
+  font-size: 0.16rem;
+  opacity: 0.9;
+  line-height: 2.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0.77rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* teacher */
+/* line 488, ../sass/style_m.scss */
+.teacher_banner {
+  width: 100%;
+  height: 5.8rem;
+  font-size: 0;
+}
+/* line 492, ../sass/style_m.scss */
+.teacher_banner img {
+  width: 100%;
+}
+
+/* line 496, ../sass/style_m.scss */
+.teacher {
+  width: 100%;
+  padding: 0 0.4rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 500, ../sass/style_m.scss */
+.teacher .line_teach_who {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+/* line 504, ../sass/style_m.scss */
+.teacher .line_teach_who .inner_img {
+  font-size: 0;
+  width: 4rem;
+  height: 2.7rem;
+  margin: 0 auto;
+}
+/* line 509, ../sass/style_m.scss */
+.teacher .line_teach_who .inner_img img {
+  width: 100%;
+}
+/* line 513, ../sass/style_m.scss */
+.teacher .line_teach_who .tw_title {
+  width: 100%;
+  height: 0.5rem;
+  font-size: 0;
+  padding-left: 0.75rem;
+  margin-top: 0.3rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 520, ../sass/style_m.scss */
+.teacher .line_teach_who .tw_title img {
+  width: 0.8rem;
+}
+/* line 524, ../sass/style_m.scss */
+.teacher .line_teach_who h2 {
+  height: 0.6rem;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.24rem;
+  color: #000;
+  line-height: 2.5;
+  margin-top: 0.2rem;
+  padding-left: 0.75rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 538, ../sass/style_m.scss */
+.teacher .line_teach_who p {
+  font-size: 0.16rem;
+  line-height: 2;
+  color: #060001;
+  opacity: 0.7;
+  padding-left: 0.75rem;
+  padding-right: 0.4rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 548, ../sass/style_m.scss */
+.teacher .teach_imgbox {
+  width: 100%;
+  font-size: 0;
+}
+/* line 551, ../sass/style_m.scss */
+.teacher .teach_imgbox img {
+  width: 100%;
+}
+/* line 555, ../sass/style_m.scss */
+.teacher .teach_tsys_text {
+  width: 100%;
+}
+/* line 557, ../sass/style_m.scss */
+.teacher .teach_tsys_text p {
+  font-size: 0.2rem;
+  line-height: 2.4;
+  text-align: center;
+}
+/* line 563, ../sass/style_m.scss */
+.teacher .line_teach_csys {
+  width: 100%;
+  height: 1.5rem;
+  margin: 0 auto 0.8rem auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.25rem 0.6rem 0 0.6rem;
+  position: relative;
+  background: #f1eefb;
+}
+/* line 571, ../sass/style_m.scss */
+.teacher .line_teach_csys .teach_csys_index {
+  position: absolute;
+  width: 0.8rem;
+  top: -0.6rem;
+  right: 0;
+  color: #574395;
+  font-size: 1.2rem;
+  opacity: 0.3;
+}
+/* line 580, ../sass/style_m.scss */
+.teacher .line_teach_csys h2 {
+  font-size: 0.24rem;
+  line-height: 2;
+  color: #000;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 589, ../sass/style_m.scss */
+.teacher .line_teach_csys p {
+  font-size: 0.16rem;
+  line-height: 1.8;
+  color: #060001;
+  opacity: 0.6;
+}
