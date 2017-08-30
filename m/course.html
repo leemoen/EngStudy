@@ -22,7 +22,7 @@
     <nav>
         <div class="inner">
             <div class="logo"><a href="/m/"><img src="../images/m/logo.png" alt="正奇英语" /></a></div>
-            <div class="menu" id="menu">
+            <div class="menu" id="menu" onclick="">
                 <img src="../images/ico_menu.png" />
             </div>
             <div class="index">正奇课程</div>
@@ -31,9 +31,9 @@
     <!-- tabs -->
     <div class="tabs">
         <div class="tab lage"><img src="../images/tabs_1_a.png" /></div>
-        <div class="tab hage" id="lage"><img src="../images/tabs_1.png" /></div>
+        <div class="tab hage" id="lage" onclick=""><img src="../images/tabs_1.png" /></div>
         <div class="tab hage"><img src="../images/tabs_2_a.png" /></div>
-        <div class="tab lage" id="hage"><img src="../images/tabs_2.png" /></div>
+        <div class="tab lage" id="hage" onclick=""><img src="../images/tabs_2.png" /></div>
     </div>
     <!-- 3-6 -->
     <div class="course lage_c">
@@ -108,7 +108,7 @@
     </div>
     <div class="bottom"></div>
     <div class="flt_nav">
-        <div class="close" id="closenav"><img src="../images/m/ico_cross.png" /></div>
+        <div class="close" id="closenav" onclick=""><img src="../images/m/ico_cross.png" /></div>
         <ul>
             <li><a href="../m/">首页</a></li>
             <li><a href="../m/course.html">正奇课程</a></li>
@@ -138,6 +138,9 @@
         $(".hage_c").css("display","block");
         $(".lage_c").css("display","none");
     });
+    document.addEventListener('touchmove', function (event) {
+      if (event.scale !== 1) { event.preventDefault(); }
+    }, false);
     </script>
 </body>
 </html>
