@@ -594,3 +594,168 @@ section{
         }
     }
 }
+/* activity */
+.act_banner{
+    width: 100%;
+    font-size: 0;
+    margin-top: 0.9rem;
+    img{
+        width: 100%;
+    }
+}
+.activity{
+    width: 4.7rem;
+    height: 3.2rem;
+    margin-right: auto;
+    margin-left: auto;
+    .act_img{
+        width: 100%;
+        height: 1.88rem;
+        font-size: 0;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .act_content{
+        width: 100%;
+        height: 0.96rem;
+        padding-top: 0.18rem;
+        padding-bottom: 0.18rem;
+        h3{
+            width: 100%;
+            height: 0.4rem;
+            font-size: 0.24rem;
+            line-height: 2;
+            color: #000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            a{
+                color: #000;
+            }
+        }
+        p{
+            width: 100%;
+            height: 0.64rem;
+            font-size: 0.18rem;
+            line-height: 2;
+            color: #5d5d5d;
+            overflow: hidden;
+        }
+    }
+}
+.actview{
+    width: 100%;
+    margin-top: 0.9rem;
+    font-size: 0;
+    img{
+        width: 100%;
+    }
+}
+/* lesson */
+.tabs{
+    width: 100%;
+    margin-top: 1.2rem;
+    height: 1.64rem;
+    text-align: center;
+    .tab{
+        //display:inline-block;
+        margin-right: 0.3rem;
+        width: 1.64rem;
+        height: 1.64rem;
+        cursor: pointer;
+        font-size: 0;
+        &:nth-child(4n+3),&:nth-child(4n){
+            margin-right: 0;
+        }
+    }
+}
+.lage{
+    display:inline-block;
+}
+.hage{
+    display:none;
+}
+.lage_c{
+    display:block;
+}
+.hage_c{
+    display:none;
+}
+.course{
+    width: 100%;
+    margin-top: 0.2rem;
+    @include box-sizing(border-box);
+    padding: 0 0.4rem;
+    .course_img{
+        width: 100%;
+        font-size: 0;
+        img{
+            width: 100%;
+        }
+    }
+    .cour_s{
+        width: 100%;
+        margin-top: 0.3rem;
+        .line_cour{
+            width: 100%;
+            @include box-sizing(border-box);
+            padding-left: 0.5rem;
+            padding-bottom: 0.24rem;
+            padding-right: 0.3rem;
+            }
+        .title_box{
+            width: 100%;
+            font-size: 0;
+            height: 0.84rem;
+            img{
+                width: 0.84rem;
+            }
+        }
+        .countent_box{
+            font-size: 0.2rem;
+            width: 100%;
+            line-height: 2;
+        }
+    }
+    .cour_info{
+        width: 100%;
+        p{
+            text-align: center;
+            font-size: 0.2rem;
+            color: #010101;
+            line-height: 3;
+        }
+    }
+    .cour_i_pic{
+        width: 100%;
+        margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        overflow: hidden;
+        .i_pic{
+            width: 1.75rem;
+            margin-right: 0.175rem;
+            float: left;
+            font-size: 0;
+            &:last-child{
+                margin-right: 0;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .cour_info2{
+        width: 100%;
+        padding-bottom: 0.5rem;
+        p{
+            text-align: center;
+            font-size: 0.2rem;
+            color: #010101;
+            line-height: 3;
+
+        }
+    }
+}

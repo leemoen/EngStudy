@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="no-cache" http-equiv="Pragma">
+    <meta content="no-store, must-revalidate" http-equiv="Cache-Control">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../css/style_m.css" />
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+
+    <title>正奇英语</title>
+</head>
+<body>
+    <div class="bor tb"></div>
+    <div class="bor bb"></div>
+    <div class="bor lb"></div>
+    <div class="bor rb"></div>
+    <nav>
+        <div class="inner">
+            <div class="logo"><a href="/m/"><img src="../images/m/logo.png" alt="正奇英语" /></a></div>
+            <div class="menu" id="menu">
+                <img src="../images/ico_menu.png" />
+            </div>
+            <div class="index">精彩活动</div>
+        </div>
+    </nav>
+    <!-- content -->
+    <section class="actview">
+        <img src="../images/page_img/ac.jpg" alt="" />
+    </section>
+    <div class="bottom"></div>
+    <div class="flt_nav">
+        <div class="close" id="closenav"><img src="../images/m/ico_cross.png" /></div>
+        <ul>
+            <li><a href="../m/">首页</a></li>
+            <li><a href="../m/course.html">正奇课程</a></li>
+            <li><a href="../m/activity.html">精彩活动</a></li>
+            <li><a href="../m/teacher.html">师资保障</a></li>
+            <li><a href="../m/about.html">关于正奇</a></li>
+        </ul>
+    </div>
+    <script>
+    $(document).on('click', '#menu', function(event) {
+        $(".flt_nav").css("display","block");
+        $("body").css("overflow","hidden");
+    });
+    $(document).on('click', '#closenav', function(event) {
+        $(".flt_nav").css("display","none");
+        $("body").css("overflow","auto");
+    });
+    </script>
+</body>
+</html>
