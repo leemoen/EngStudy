@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/redirect.js"></script>
+    <title>正奇英语</title>
+</head>
+<body style="overflow-x:hidden">
+    <div class="bor tb"></div>
+    <div class="bor bb"></div>
+    <div class="bor lb"></div>
+    <div class="bor rb"></div>
+    <nav>
+        <div class="inner">
+            <div class="logo"><a href="/"><img src="images/logo.png" alt="正奇英语" /></a></div>
+            <div class="menu">
+                <div class="index">师资保障 </div>
+                <div class="navmenu" id="navmenu">
+                    <img src="images/ico_menu.png" />
+                    <div class="closebt" id="closebt"><img src="images/ico_cross.png" /></div>
+                    <div class="whitemask"></div>
+                    <div class="menubox">
+                        <ul>
+                            <li><a href="/">首页</a></li>
+                            <li><a href="course.html">正奇课程</a></li>
+                            <li><a href="activity.html">精彩活动</a></li>
+                            <li><a href="teacher.html">师资保障</a></li>
+                            <li><a href="about.html">关于正奇</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="teach_bg"></div>
+    <div class="teach_bg_top"></div>
+    <div class="main">
+        <div class="banner_tech"><img src="images/banner.png" alt="" /></div>
+        <div class="page_title"><img src="images/title_teach_1.png" alt="" /></div>
+        <section>
+            <div class="line_teach_who">
+                <div class="inner_img"><img src="images/page_img/teach_1.jpg" alt="" /></div>
+                <div class="tw_title"><img src="images/page_img/teach_t_1.png" alt="" /></div>
+                <h2>全球招聘</h2>
+                <p>线上初试、线下面试、入职培训，层层过关筛查</p>
+            </div>
+            <div class="line_teach_who">
+                <div class="inner_img"><img src="images/page_img/teach_2.jpg" alt="" /></div>
+                <div class="tw_title"><img src="images/page_img/teach_t_2.png" alt="" /></div>
+                <h2>至少经过5项考核</h2>
+                <p>职业素养，语言能力，学科知识，教学技能，儿童心理</p>
+            </div>
+            <div class="line_teach_who">
+                <div class="inner_img"><img src="images/page_img/teach_3.jpg" alt="" /></div>
+                <div class="tw_title"><img src="images/page_img/teach_t_3.png" alt="" /></div>
+                <h2>不仅仅拥有纯正英语，还有开朗的性格</h2>
+                <p>纯正口音、情感丰富、性格开朗，和一颗爱孩子的心。</p>
+            </div>
+            <div class="line_teach_who">
+                <div class="inner_img"><img src="images/page_img/teach_4.jpg" alt="" /></div>
+                <div class="tw_title"><img src="images/page_img/teach_t_4.png" alt="" /></div>
+                <h2>更懂孩子，他们都是启蒙专家</h2>
+                <p>鼓励孩子对未知世界的探索，在学习中不断积累经验</p>
+            </div>
+            <div class="line_teach_who">
+                <div class="inner_img"><img src="images/page_img/teach_5.jpg" alt="" /></div>
+                <div class="tw_title"><img src="images/page_img/teach_t_5.png" alt="" /></div>
+                <h2>TESOL/TEFL双重国际认证</h2>
+                <p>专业国际英语教师资格认证，国家外专局认可，保障专业化教学水准</p>
+            </div>
+        </section>
+        <div class="page_title"><img src="images/title_teach_2.png" alt="" /></div>
+        <section>
+            <div class="teach_imgbox"><img src="images/page_img/teach_sys.jpg" alt="" /></div>
+            <div class="teach_tsys_text">
+                <p>各个岗位专业培训，环环相扣，层层渗透</p>
+                <p>从日常备课、技能学习，到儿童心理学、未来学业对接，教学相长</p>
+                <p>同步美国本土课堂同时力求本土对接</p>
+                <p>为打造国际化人才的教育目标提供最强有力的支撑。</p>
+            </div>
+        </section>
+        <div class="page_title"><img src="images/title_teach_3.png" alt="" /></div>
+        <section>
+            <div class="line_teach_csys">
+                <div class="teach_csys_index">1</div>
+                <h2>教学内容和教学模式的标准化</h2>
+                <p>精准定位与把控教师教学质量</p>
+            </div>
+            <div class="line_teach_csys">
+                <div class="teach_csys_index">2</div>
+                <h2>浸入式教学</h2>
+                <p>全英环境下掌握语言背后的逻辑、文化、思维方式</p>
+            </div>
+            <div class="line_teach_csys">
+                <div class="teach_csys_index">3</div>
+                <h2>互动、探索式课堂</h2>
+                <p>激发孩子学习兴趣，培养孩子自主探索学习的能力，线上线下结合：更便捷复习巩固知识</p>
+            </div>
+        </section>
+    </div>
+    <script>
+        $("#navmenu").hover(function() {
+            $(".closebt").show();
+            $(".whitemask").show();
+            $(".menubox").show();
+        }, function() {
+            /* Stuff to do when the mouse leaves the element */
+        });
+        $("#closebt").click(function(event) {
+            $(".closebt").hide();
+            $(".whitemask").hide();
+            $(".menubox").hide();
+        });
+    </script>
+</body>
+</html>
