@@ -110,7 +110,7 @@ section{
 .banner li{
     width: 100%;
     position: relative;
-    font-size: 0; 
+    font-size: 0;
     img{
         width: 100%;
     }
@@ -288,6 +288,58 @@ section{
             color: #fff;
             border:none;
             -webkit-appearance: none;
+        }
+    }
+    .localbox{
+        width: 100%;
+        height: 0.48rem;
+        text-align: center;
+        font-size: 0;
+        position: relative;
+        margin-top: 0.5rem;
+        cursor: pointer;
+
+        span{
+            font-size:0.18rem;
+            line-height: 2.6;
+            color: #574395;
+        }
+        img{
+            width: 0.24rem;
+            margin-right: 0.1rem;
+            vertical-align: -0.05rem;
+        }
+        .fltbox{
+            display: none;
+            width: 4.4rem;
+            height: 1.2rem;
+            position: absolute;
+            z-index:10;
+            @include border-radius(0.08rem);
+            border: 2px solid #574395;
+            bottom: 0.5rem;
+            left: 50%;
+            margin-left: -2.2rem;
+            background: #fff;
+            @include box-sizing(border-box);
+            padding: 0.1rem 0.16rem;
+            p{
+                font-size: 0.16rem;
+                color: #574395;
+                line-height: 1.6;
+            }
+            .cor{
+                width: 0.12rem;
+                height: 0.18rem;
+                position: absolute;
+                top:1.12rem;
+                left: 50%;
+                margin-left: -0.06rem;
+                z-index: 11;
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 }

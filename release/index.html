@@ -166,6 +166,15 @@
                                         <form action="">
                                             <div class="inputbox"><input type="text" placeholder="您的联系方式" /></div>
                                             <div class="btbox"><input type="submit" value="立即申请" /></div>
+                                            <div class="localbox">
+                                                <img src="images/ico_location.png" alt="" /><span>查看已有学校地址</span>
+                                                <div class="fltbox">
+                                                    <p>航天城校区1：海淀区友谊路102号院东区2号楼</p>
+                                                    <p>航天城校区2：海淀区友谊路102号院东区27号楼</p>
+                                                    <p>杏林湾校区：海淀区北清路永丰嘉园2区16号楼</p>
+                                                    <div class="cor"><img src="images/ico_cor.png" alt="" /></div>
+                                                </div>
+                                            </div>
                                         </form>
                                     </div>
                                 </section>
@@ -253,7 +262,7 @@
                     freeModeMomentum : true,
                     mousewheelControl: true,
                     mousewheelSensitivity : 0.5,
-                });        		
+                });
         	}, 'html');
         });
         $("#navmenu").hover(function() {
@@ -267,6 +276,11 @@
             $(".closebt").hide();
             $(".whitemask").hide();
             $(".menubox").hide();
+        });
+        $(".localbox").hover(function() {
+            $(".fltbox").css("display","block");
+        }, function() {
+            $(".fltbox").css("display","none");
         });
     </script>
 </body>
