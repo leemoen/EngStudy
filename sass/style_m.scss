@@ -326,7 +326,7 @@ section{
             p{
                 font-size: 0.16rem;
                 color: #574395;
-                line-height: 1.6;
+                line-height: 2;
             }
             .cor{
                 width: 0.12rem;
@@ -651,6 +651,17 @@ section{
     width: 100%;
     font-size: 0;
     margin-top: 0.9rem;
+    position: relative;
+    .border{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        @include box-sizing(border-box);
+        border: 2px solid #000;
+        opacity: 0.2;
+    }
     img{
         width: 100%;
     }
@@ -665,6 +676,17 @@ section{
         height: 1.88rem;
         font-size: 0;
         overflow: hidden;
+        position: relative;
+        .border{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            @include box-sizing(border-box);
+            border: 2px solid #000;
+            opacity: 0.2;
+        }
         img{
             width: 100%;
         }

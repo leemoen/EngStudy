@@ -758,6 +758,17 @@ nav{
         overflow: hidden;
         padding-top: 30px;
         cursor: pointer;
+        position: relative;
+        .border{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            @include box-sizing(border-box);
+            border: 2px solid #000;
+            opacity: 0.2;
+        }
     }
     .act_list{
         width: 100%;
@@ -776,6 +787,17 @@ nav{
                 font-size: 0;
                 overflow: hidden;
                 cursor: pointer;
+                position: relative;
+                .border{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    right:0;
+                    bottom:0;
+                    @include box-sizing(border-box);
+                    border: 2px solid #000;
+                    opacity: 0.2;
+                }
             }
             .act_content{
                 width: 100%;
