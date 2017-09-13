@@ -103,12 +103,37 @@
     	$.get('/api/ajax/topact', function(html){
     		$('.main').prepend(html);
     	}, 'html');
+    	
+    	
+    	var actCount = 0;
+    	var more = true;
+    	
     	$.get('/api/ajax/acts', {from:0, size: 50}, function(html){
     		$('.act_list').html(html);
+    		var _actCount = $('.act_list').children('div').length;
+    		more = _actCount == actCount + size;
+    		actCount = _actCount;
     	}, 'html');
         $.get('/api/ajax/actdetails', {from:0, size: 50}, function(html){
         	$('body').append(html);
         });
+        
+        $(window).scroll(function () {
+           var scrollTop = $(this).scrollTop();
+           var scrollHeight = $(document).height();
+           var windowHeight = $(this).height();
+           if (more && scrollTop + windowHeight == scrollHeight) {
+               $.get('/api/ajax/acts', {from:actCount, size: 50}, function(html){
+                   $('.act_list').html(html);
+                   var _actCount = $('.act_list').children('div').length;
+                   more = _actCount == actCount + size; 
+                   actCount = _actCount;
+               }, 'html');
+               $.get('/api/ajax/actdetails', {from:actCount, size: 50}, function(html){
+                   $('body').append(html);
+               });
+           }
+       });        
     });
         $("#navmenu").hover(function() {
             $(".closebt").show();

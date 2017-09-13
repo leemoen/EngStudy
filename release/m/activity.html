@@ -95,7 +95,32 @@
     <script>
     $(function(){
     	$('#topact').load('/api/ajax/topact');
-    	$('#actlist').load('/api/ajax/acts', {from:0, size: 50});
+
+
+        var actCount = 0;
+        var more = true;
+
+    	$.get('/api/ajax/acts', {from:actCount, size: 50}, function(html){
+    		$('#actlist').html(html);
+            var _actCount = $('#actlist').children('div').length;
+            more = _actCount == actCount + size;
+            actCount = _actCount;
+    	}, 'html');
+
+        $(window).scroll(function () {
+            var scrollTop = $(this).scrollTop();
+            var scrollHeight = $(document).height();
+            var windowHeight = $(this).height();
+            if (scrollTop + windowHeight == scrollHeight && more) {
+                $.get('/api/ajax/acts', {from:actCount, size: 50}, function(html){
+                    $('#actlist').html(html);
+                    var _actCount = $('#actlist').children('div').length;
+                    more = _actCount == actCount + size;
+                    actCount = _actCount;
+                }, 'html');
+            }
+        });
+
     });
     $(document).on('click', '#menu', function(event) {
         $(".flt_nav").css("display","block");
@@ -105,9 +130,9 @@
         $(".flt_nav").css("display","none");
         $("body").css("overflow","auto");
     });
-    document.addEventListener('touchmove', function (event) {
-      if (event.scale !== 1) { event.preventDefault(); }
-    }, false);
+    // document.addEventListener('touchmove', function (event) {
+    //   if (event.scale !== 1) { event.preventDefault(); }
+    // }, false);
     </script>
 </body>
 </html>
