@@ -367,6 +367,9 @@ nav{
                     border: 2px solid #5b4e9b;
                     font-size: 16px;
                     color: #000;
+                    &:active{
+                        border:none;
+                    }
                 }
                 ::-webkit-input-placeholder {
                     color: #9a8ebf;
@@ -385,7 +388,7 @@ nav{
                 text-align: center;
                 width: 100%;
                 margin-top: 50px;
-                input[type=submit]{
+                input[type=submit],input[type=button]{
                     width: 120px;
                     height: 50px;
                     text-align: center;
@@ -394,6 +397,9 @@ nav{
                     font-size: 16px;
                     color: #fff;
                     border:none;
+                    &:active{
+                        border:none;
+                    }
                 }
             }
             .localbox{
@@ -446,6 +452,55 @@ nav{
                             width: 100%;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+.alert{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    z-index:2000;
+    display:none;
+    .alertbox{
+        position: absolute;
+        width: 300px;
+        height: 150px;
+        top:50%;
+        left:50%;
+        margin-left: -150px;
+        margin-top: -75px;
+        background: #fff;
+        @include box-sizing(border-box);
+        @include border-radius(8px);
+        border: 2px solid #574395;
+        padding-top: 50px;
+        .textbox{
+            height: 40px;
+            font-size: 16px;
+            text-align: center;
+            color: #000;
+
+        }
+        .btbox{
+            
+            text-align: center;
+            input[type=submit],input[type=button]{
+                cursor: pointer;
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                @include border-radius(6px);
+                background: #5b4e9b;
+                font-size: 16px;
+                color: #fff;
+                border:none;
+                &:active{
+                    border:none;
                 }
             }
         }
