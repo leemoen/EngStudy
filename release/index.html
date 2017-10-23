@@ -163,17 +163,17 @@
                                 </div>
                                 <section>
                                     <div class="line_content_contact">
-                                            <div class="inputbox"><input type="text" placeholder="您的联系方式" /></div>
-                                            <div class="btbox"><input type="submit" value="立即申请" /></div>
-                                            <div class="localbox">
-                                                <img src="images/ico_location.png" alt="" /><span>查看已有学校地址</span>
-                                                <div class="fltbox">
-                                                    <p>航天城校区1：海淀区友谊路102号院东区2号楼</p>
-                                                    <p>航天城校区2：海淀区友谊路102号院东区27号楼</p>
-                                                    <p>杏林湾校区：海淀区北清路永丰嘉园2区16号楼</p>
-                                                    <div class="cor"><img src="images/ico_cor.png" alt="" /></div>
-                                                </div>
+                                        <div class="inputbox"><input type="text" placeholder="您的联系方式" id="contact" /></div>
+                                        <div class="btbox"><input type="button" value="立即申请" onclick="SubmitContact();" /></div>
+                                        <div class="localbox">
+                                            <img src="images/ico_location.png" alt="" /><span>查看已有学校地址</span>
+                                            <div class="fltbox">
+                                                <p>航天城校区1：海淀区友谊路102号院东区2号楼</p>
+                                                <p>航天城校区2：海淀区友谊路102号院东区27号楼</p>
+                                                <p>杏林湾校区：海淀区北清路永丰嘉园2区16号楼</p>
+                                                <div class="cor"><img src="images/ico_cor.png" alt="" /></div>
                                             </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -184,6 +184,12 @@
             </section>
         </div>
         <div class="swiper-pagination"></div>
+    </div>
+    <div class="alert">
+        <div class="alertbox">
+            <div class="textbox" id="conresult">成功</div>
+            <div class="btbox" id="conbt"><input type="button" value="确定" onclick="CloseAlert();" /></div>
+        </div>
     </div>
     <script>
         $(window).resize(function () {
@@ -280,6 +286,29 @@
         }, function() {
             $(".fltbox").css("display","none");
         });
+        function SubmitContact(){
+            $(".alert").show();
+            document.getElementById("conresult").innerHTML = "提交中...";//$("#contact").val();
+            $("#conbt").hide();
+            $.post("/api/ajax/contact", { "contact": $("#contact").val()}, function (data, state) {
+                if (state == "success") {
+                    //console.log(data);
+                    var item = $.parseJSON(data);
+                    $("#conbt").show();
+                    if(item[0].code==200){
+                        document.getElementById("conresult").innerHTML = "提交成功";
+                    }else{
+                        document.getElementById("conresult").innerHTML = item[0].message;
+                    }
+                }else{
+                    $("#conbt").show();
+                    document.getElementById("conresult").innerHTML = "提交失败";
+                }
+            });
+        }
+        function CloseAlert(){
+            $(".alert").hide();
+        }
     </script>
 </body>
 </html>
