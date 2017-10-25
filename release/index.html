@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8" />
@@ -10,6 +11,8 @@
     <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
     <script type="text/javascript" src="js/preloadjs-0.6.2.min.js"></script>
     <script type="text/javascript" src="js/redirect.js"></script>
+        <meta name="keywords" content="正奇,少儿英语,幼儿英语,genki,欧美外教,纯外教,6人小班,原版课件">
+    <meta name="Description" content="专业从事3-12岁幼少儿阶段英语学习的基础教育资源和服务提供，采用美国原版教材，拥有一支国际化的专业学术和服务团队，向中高端幼儿园、小学、英语教学机构及双语学校提供专业的英语教育服务。">
     <title>正奇英语</title>
 </head>
 <body style="overflow:hidden;background: #eeecf4">
@@ -33,6 +36,7 @@
                             <li><a href="activity.html">精彩活动</a></li>
                             <li><a href="teacher.html">师资保障</a></li>
                             <li><a href="about.html">关于正奇</a></li>
+                            <li><a href="login.html">在线学习</a></li>
                         </ul>
                     </div>
                 </div>
@@ -290,19 +294,12 @@
             $(".alert").show();
             document.getElementById("conresult").innerHTML = "提交中...";//$("#contact").val();
             $("#conbt").hide();
-            $.post("/api/ajax/contact", { "contact": $("#contact").val()}, function (data, state) {
-                if (state == "success") {
-                    //console.log(data);
-                    var item = $.parseJSON(data);
-                    $("#conbt").show();
-                    if(item[0].code==200){
-                        document.getElementById("conresult").innerHTML = "提交成功";
-                    }else{
-                        document.getElementById("conresult").innerHTML = item[0].message;
-                    }
+            $.post("/api/ajax/contact", { "contact": $("#contact").val()}, function (data) {
+                $("#conbt").show();
+                if(data.code==200){
+                    document.getElementById("conresult").innerHTML = "提交成功";
                 }else{
-                    $("#conbt").show();
-                    document.getElementById("conresult").innerHTML = "提交失败";
+                    document.getElementById("conresult").innerHTML = data.message;
                 }
             });
         }

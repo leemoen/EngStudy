@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title>正奇英语</title>
+</head>
+<body style="overflow-x:hidden">
+    <div class="bor tb"></div>
+    <div class="bor bb"></div>
+    <div class="bor lb"></div>
+    <div class="bor rb"></div>
+    <nav>
+        <div class="inner">
+            <div class="logo"><a href="/"><img src="images/logo.png" alt="正奇英语" /></a></div>
+            <div class="menu">
+                <div class="index">在线学习 </div>
+                <div class="navmenu" id="navmenu">
+                    <img src="images/ico_menu.png" />
+                    <div class="closebt" id="closebt"><img src="images/ico_cross.png" /></div>
+                    <div class="whitemask"></div>
+                    <div class="menubox">
+                        <ul>
+                            <li><a href="/">首页</a></li>
+                            <li><a href="course.html">正奇课程</a></li>
+                            <li><a href="activity.html">精彩活动</a></li>
+                            <li><a href="teacher.html">师资保障</a></li>
+                            <li><a href="about.html">关于正奇</a></li>
+                            <li><a href="login.html">在线学习</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+
+        <div class="lessonlist">
+            <div class="lesson"><a href="view.html"><img src="images/page_img/ob_1.jpg" alt="" /></a></div>
+            <div class="lesson"><a href="view.html"><img src="images/page_img/ob_1.jpg" alt="" /></a></div>
+        </div>
+    </div>
+    <script>
+        $("#navmenu").hover(function() {
+            $(".closebt").show();
+            $(".whitemask").show();
+            $(".menubox").show();
+        }, function() {
+            /* Stuff to do when the mouse leaves the element */
+        });
+        $("#closebt").click(function(event) {
+            $(".closebt").hide();
+            $(".whitemask").hide();
+            $(".menubox").hide();
+        });
+    </script>
+</body>
+</html>
