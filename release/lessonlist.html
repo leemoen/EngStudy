@@ -38,8 +38,8 @@
     <div class="main">
 
         <div class="lessonlist">
-            <div class="lesson"><a href="view.html"><img src="images/page_img/ob_1.jpg" alt="" /></a></div>
-            <div class="lesson"><a href="view.html"><img src="images/page_img/ob_1.jpg" alt="" /></a></div>
+            <div class="lesson"><a href="view.html"><img src="images/page_img/gk.jpg" alt="" /></a></div>
+            <!-- <div class="lesson"><a href="view.html"><img src="images/page_img/ob_1.jpg" alt="" /></a></div> -->
         </div>
         <div class="logout">
             <input type="button" value="退出登录" />
@@ -58,6 +58,11 @@
             $(".whitemask").hide();
             $(".menubox").hide();
         });
+        $.post('/api/ajax/status', function(d){
+        	if (d['data'] == 0){
+        		window.location.href="/login.html";
+        	}
+        }, 'json');
     </script>
 </body>
 </html>

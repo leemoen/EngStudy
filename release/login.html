@@ -5,6 +5,13 @@
     <meta name="format-detection" content="telephone=no"/>
     <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+      $.post('/api/ajax/status', function(d){
+          if (d['data'] > 0){
+              window.location.href="/lessonlist.html";
+          }
+      }, 'json');
+    </script>
     <title>正奇英语</title>
 </head>
 <body style="overflow-x:hidden">
@@ -36,13 +43,24 @@
         </div>
     </nav>
     <div class="main">
-
-        <div class="lessonlist">
-            <div class="lesson"><a href="view.html"><img src="images/page_img/ob_1.jpg" alt="" /></a></div>
-            <div class="lesson"><a href="view.html"><img src="images/page_img/ob_1.jpg" alt="" /></a></div>
+        <div class="loginbox">
+            <form action="" onsubmit="return login()">
+                <div class="inputline">
+                    <input type="text" placeholder="请输入学号" id="code" />
+                </div>
+                <div class="inputline">
+                    <input type="password" placeholder="请输入密码" id="pwd" />
+                </div>
+                <div class="btbox">
+                    <input type="submit" value="登录" />
+                </div>
+            </form>
         </div>
-        <div class="logout">
-            <input type="button" value="退出登录" />
+    </div>
+    <div class="alert">
+        <div class="alertbox">
+            <div class="textbox" id="conresult">成功</div>
+            <div class="btbox" id="conbt"><input type="button" value="确定" onclick="CloseAlert();" /></div>
         </div>
     </div>
     <script>
@@ -58,6 +76,25 @@
             $(".whitemask").hide();
             $(".menubox").hide();
         });
+         function ShowAlert(message){
+            $(".alert").show();
+            document.getElementById("conresult").innerHTML = message;
+        }
+        function CloseAlert(){
+            $(".alert").hide();
+        }
+        function login(){
+            var ps = {};
+            ps['code'] = $('#code').val();
+            ps['pwd'] = $('#pwd').val();
+            $.post('/api/ajax/login', ps, function(d){
+                alert(d['message']);
+                if (d['code'] == 200){
+                    window.location.href="/lessonlist.html";
+                }
+            }, 'json');
+            return false;
+        }
     </script>
 </body>
 </html>
